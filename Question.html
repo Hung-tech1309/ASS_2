@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam Travel - Question</title>
+    <link rel="stylesheet" href="../ASS2/css/question.css">
+    <link rel="stylesheet" href="../ASS2/css/reset.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="main">
+        <!-- Header Section -->
+        <div id="header">            
+            <ul id="nav">
+                <!-- Begin: nav -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="question.html">Question</a></li>
+                <li><a href="tour.html">Tour</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="">
+                        More
+                        <i class="nav-more-down"><ion-icon name="caret-down-outline"></ion-icon></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="settings.html">Setting</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End: nav -->
+            <!-- Begin: search button -->
+            <div class="search-btn">
+                <i class="search-icon"><ion-icon name="search"></ion-icon></ion-icon></i>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div id="content">
+            <div class="content-section about-section">
+                <h2 class="content-heading2">ASK YOUR QUESTION</h2>
+                <p class="content-sub-heading2">We are here to help you!</p>
+                <div class="question-form">
+                    <!-- Add your question form here -->
+                    <form action="submit_question.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="question">Question:</label>
+                        <textarea id="question" name="question" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div id="footer">
+            <div class="socials-list">
+                <a href=""><i class="facebook"><ion-icon name="logo-facebook"> </ion-icon></i></a>
+                <a href=""><i class="instagram"><ion-icon name="logo-instagram"></ion-icon></i></a>
+                <a href=""><i class="pinterest"><ion-icon name="logo-pinterest"></ion-icon></i></a>
+                <a href=""><i class="twitch"><ion-icon name="logo-twitch"></ion-icon></i></a>
+                <a href=""><i class="twitter"><ion-icon name="logo-twitter"></ion-icon></i></a>
+                <a href=""><i class="youtube"><ion-icon name="logo-youtube"></ion-icon></i></a>
+            </div>
+            <p class="copyright">By Hưng <a href="https://play.google.com/store/apps/details?id=com.biin.tourism&hl=en_US&pli=1">APP STORE OR GOOGLE PLAY</a></p>
+        </div>
+    </div>
+</body>
+</html>

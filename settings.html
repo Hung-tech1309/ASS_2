@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cài Đặt Trang Web</title>
+    <link rel="stylesheet" href="../ASS2/css/setting.css">
+    <link rel="stylesheet" href="../ASS2/css/script.js">
+    <link rel="stylesheet" href="../ASS2/css/reset.css">
+</head>
+<body>
+    <div class="main">
+        <!-- Header Section -->
+        <div id="header">            
+            <ul id="nav">
+                <!-- Begin: nav -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Question.html">Question</a></li>
+                <li><a href="tour.html">Tour</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="nav-more-down"><ion-icon name="caret-down-outline"></ion-icon></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="settings.html">Setting</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End: nav -->
+            <!-- Begin: search button -->
+            <div class="search-btn">
+                <i class="search-icon"><ion-icon name="search"></ion-icon></i>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>Cài Đặt Trang Web</h1>
+    </header>
+    
+    <main>
+        <section id="settings-section">
+            <h2>Chỉnh Sửa Cài Đặt</h2>
+            <form id="settings-form">
+                <div class="form-group">
+                    <label for="background-color">Chọn Màu Nền:</label>
+                    <input type="color" id="background-color" name="background-color" value="#ffffff">
+                </div>
+                <div class="form-group">
+                    <label for="font-family">Chọn Phông Chữ:</label>
+                    <select id="font-family" name="font-family">
+                        <option value="'Roboto', sans-serif">Roboto</option>
+                        <option value="'Arial', sans-serif">Arial</option>
+                        <option value="'Georgia', serif">Georgia</option>
+                        <option value="'Times New Roman', serif">Times New Roman</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="applySettings()">Áp Dụng</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lịch Sử Du Lịch Việt Nam</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

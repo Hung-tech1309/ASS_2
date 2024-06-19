@@ -1,0 +1,234 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#main {
+    width: 100%;
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 28px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 20px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+#nav .nav-more-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 21px;
+    line-height: 46px;
+}
+
+#content {
+    padding: 100px 20px; 
+    text-align: center;
+}
+
+.content-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-heading {
+    font-size: 2.5em;
+    margin: 0.67em 0;
+    color: #333;
+}
+
+.content-sub-heading {
+    font-size: 1.5em;
+    margin-top: 1em;
+    color: #666;
+}
+
+.tickets-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tickets-list li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.sold-out {
+    color: red;
+    font-weight: bold;
+}
+
+.quantity {
+    color: green;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col {
+    flex: 0 0 30%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.places-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.places-img {
+    width: 100%;
+    height: auto;
+}
+
+.places-body {
+    padding: 20px;
+}
+
+.places-heading {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.places-time {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.places-desc {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.places-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.places-buy-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.places-buy-btn:hover {
+    background-color: #0056b3;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.socials-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.socials-list a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.socials-list i {
+    font-size: 2em;
+}
+
+.copyright {
+    margin: 0;
+}
